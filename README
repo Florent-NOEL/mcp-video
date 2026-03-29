@@ -1,0 +1,60 @@
+mcp-video
+
+Serveur MCP en Python pour piloter la lecture de vidéos en local avec VLC et exposer des tools utilisables par un client MCP comme MCP Inspector ou Claude Desktop.
+
+Fonctionnalités
+- exposer un serveur MCP nommé video-control
+- lister les séries disponibles
+- lancer un épisode local via VLC
+- tester facilement le serveur avec MCP Inspector
+
+Stack
+- Python 3.11+
+- Poetry
+- MCP Python SDK
+- python-dotenv
+
+Structure du projet
+mcp-video/
+├── tools/
+│   ├── series.py
+│   └── video.py
+├── server.py
+├── run.ps1
+├── pyproject.toml
+└── config/
+
+Prérequis
+- Python 3.11 ou supérieur
+- Poetry
+- Node.js / npx
+- VLC installé sur la machine
+
+Installation
+poetry install
+
+Configuration
+Copy-Item .\config\conf-exemple.py .\config\conf.py
+
+Adapter :
+- VIDEO_ROOT
+- VLC_PATH
+
+Lancer le serveur
+Option 1:
+.\run.ps1
+
+Option 2:
+poetry run python server.py
+
+Tools exposés
+- list_series
+- play_series_episode
+
+Exemple de configuration
+from pathlib import Path
+VIDEO_ROOT = Path("C:/Videos")
+VLC_PATH = Path("C:/Program Files/VideoLAN/VLC/vlc.exe")
+
+Auteur
+Florent-NOEL
