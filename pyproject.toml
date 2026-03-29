@@ -1,0 +1,17 @@
+[project]
+name = "mcp-video"
+version = "1.0.0"
+description = "serveur mcp pour la gestion de video en local"
+authors = [
+    {name = "Florent-NOEL",email = "121178866+Florent-NOEL@users.noreply.github.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp (>=1.26.0,<2.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

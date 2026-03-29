@@ -1,0 +1,102 @@
+# =========================
+
+# IntelliJ / IDE
+
+# =========================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Info mpc inspector
+.inspector
+
+# Environment variables
+
+# =========================
+*config/conf.py
+.env
+.env.*
+
+# =========================
+
+# Logs & runtime
+
+# =========================
+
+*.log
+logs/
+*.pid
+
+# =========================
+
+# Build / distribution
+
+# =========================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Testing / coverage
+
+# =========================
+
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# =========================
+
+# VS Code (si jamais)
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Misc
+
+# =========================
+
+*.swp
+*.swo
+# =========================
+# Poetry
+# =========================
+
+__pycache__/
+.cache/pypoetry/
